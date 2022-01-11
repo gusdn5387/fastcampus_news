@@ -20,6 +20,7 @@
 		51C7398E278D62E600B0B245 /* NewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C7398D278D62E600B0B245 /* NewsListPresenter.swift */; };
 		51C73991278D754300B0B245 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C73990278D754300B0B245 /* NewsListTableViewCell.swift */; };
 		51C73994278D7B7500B0B245 /* TTGTags in Frameworks */ = {isa = PBXBuildFile; productRef = 51C73993278D7B7500B0B245 /* TTGTags */; };
+		51C73996278D7C4000B0B245 /* NewsListTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C73995278D7C4000B0B245 /* NewsListTableViewHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		51C73978278D5CED00B0B245 /* keywordNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keywordNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		51C7398D278D62E600B0B245 /* NewsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListPresenter.swift; sourceTree = "<group>"; };
 		51C73990278D754300B0B245 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
+		51C73995278D7C4000B0B245 /* NewsListTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				51C73959278D5CE800B0B245 /* NewsListViewController.swift */,
 				51C7398D278D62E600B0B245 /* NewsListPresenter.swift */,
 				51C73990278D754300B0B245 /* NewsListTableViewCell.swift */,
+				51C73995278D7C4000B0B245 /* NewsListTableViewHeaderView.swift */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				51C7395A278D5CE800B0B245 /* NewsListViewController.swift in Sources */,
 				51C73991278D754300B0B245 /* NewsListTableViewCell.swift in Sources */,
+				51C73996278D7C4000B0B245 /* NewsListTableViewHeaderView.swift in Sources */,
 				51C73956278D5CE800B0B245 /* AppDelegate.swift in Sources */,
 				51C73958278D5CE800B0B245 /* SceneDelegate.swift in Sources */,
 				51C7398E278D62E600B0B245 /* NewsListPresenter.swift in Sources */,
