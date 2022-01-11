@@ -19,6 +19,7 @@
 		51C7398A278D5DDC00B0B245 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 51C73989278D5DDC00B0B245 /* Alamofire */; };
 		51C7398E278D62E600B0B245 /* NewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C7398D278D62E600B0B245 /* NewsListPresenter.swift */; };
 		51C73991278D754300B0B245 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C73990278D754300B0B245 /* NewsListTableViewCell.swift */; };
+		51C73994278D7B7500B0B245 /* TTGTags in Frameworks */ = {isa = PBXBuildFile; productRef = 51C73993278D7B7500B0B245 /* TTGTags */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C73994278D7B7500B0B245 /* TTGTags in Frameworks */,
 				51C73987278D5DAD00B0B245 /* SnapKit in Frameworks */,
 				51C7398A278D5DDC00B0B245 /* Alamofire in Frameworks */,
 			);
@@ -169,6 +171,7 @@
 			packageProductDependencies = (
 				51C73986278D5DAD00B0B245 /* SnapKit */,
 				51C73989278D5DDC00B0B245 /* Alamofire */,
+				51C73993278D7B7500B0B245 /* TTGTags */,
 			);
 			productName = keywordNews;
 			productReference = 51C73952278D5CE800B0B245 /* keywordNews.app */;
@@ -245,6 +248,7 @@
 			packageReferences = (
 				51C73985278D5DAD00B0B245 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				51C73988278D5DDC00B0B245 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				51C73992278D7B7500B0B245 /* XCRemoteSwiftPackageReference "TTGTagCollectionView" */,
 			);
 			productRefGroup = 51C73953278D5CE800B0B245 /* Products */;
 			projectDirPath = "";
@@ -640,6 +644,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		51C73992278D7B7500B0B245 /* XCRemoteSwiftPackageReference "TTGTagCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zekunyan/TTGTagCollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -652,6 +664,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 51C73988278D5DDC00B0B245 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		51C73993278D7B7500B0B245 /* TTGTags */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51C73992278D7B7500B0B245 /* XCRemoteSwiftPackageReference "TTGTagCollectionView" */;
+			productName = TTGTags;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
