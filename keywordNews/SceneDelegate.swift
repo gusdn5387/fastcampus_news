@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let rootViewController = ViewController()
+        let rootViewController = UINavigationController(rootViewController: NewsListViewController())
+//        let rootViewController = NewsListViewController()
         
         window?.backgroundColor = .systemBackground
         window?.rootViewController = rootViewController
