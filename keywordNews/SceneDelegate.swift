@@ -23,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let rootViewController = NewsListViewController()
         
         window?.backgroundColor = .systemBackground
+        window?.tintColor = .systemOrange
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
