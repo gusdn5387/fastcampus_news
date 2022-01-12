@@ -10,9 +10,20 @@ import SnapKit
 import WebKit
 
 final class NewsWebViewController: UIViewController {
+    private let news: News
     private let webView = WKWebView()
     
     private let rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "link"), style: .plain, target: self, action: #selector(didTapRightBarButtonItem))
+    
+    init(news: News) {
+        self.news = news
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +37,12 @@ final class NewsWebViewController: UIViewController {
 
 private extension NewsWebViewController {
     func setupNavigationBar() {
-        navigationItem.title = "기사 제목"
+        navigationItem.title = news.title.htmlToString
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
     func setupWebView() {
-        guard let linkURL = URL(string: "https://fastcampus.co.kr/") else {
+        guard let linkURL = URL(string: news.link) else {
             navigationController?.popViewController(animated: true)
             return
         }
@@ -43,6 +54,6 @@ private extension NewsWebViewController {
     }
     
     @objc func didTapRightBarButtonItem() {
-        UIPasteboard.general.string = "기사 링크"
+        UIPasteboard.general.string = news.link
     }
 }
